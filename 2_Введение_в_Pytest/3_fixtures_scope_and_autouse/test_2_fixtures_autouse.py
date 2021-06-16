@@ -3,12 +3,12 @@ import pytest
 
 # СНАЧАЛА ПРО SCOPE!
 
-# @pytest.fixture(autouse=True)
-# def function_fixture(request):
-#     print(f"\n Hello from {request.scope} fixture!")
-#     def fin():
-#         print(f"\n Finalize from {request.scope} fixture!")
-#     request.addfinalizer(fin)
+@pytest.fixture(autouse=True)
+def function_fixture(request):
+    print(f"\n Hello from {request.scope} fixture!")
+    def fin():
+        print(f"\n Finalize from {request.scope} fixture!")
+    request.addfinalizer(fin)
 #
 # @pytest.fixture(scope="class", autouse=True)
 # def class_fixture(request):

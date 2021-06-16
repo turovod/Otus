@@ -24,6 +24,6 @@ class TestClassParametrized:
 #
 # Combine parametrization
 #
-# @pytest.mark.parametrize("test_input", [1, 2, 3])
-# def test_one_2(test_input, fixture_with_params):
-#     print(test_input, fixture_with_params)
+@pytest.mark.parametrize("test_input", [1, 2, 3])
+def test_one_2(test_input, fixture_with_params):
+    print(test_input, fixture_with_params)
