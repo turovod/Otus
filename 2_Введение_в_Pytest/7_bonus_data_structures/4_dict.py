@@ -32,7 +32,11 @@ print("-----------------")
 for k,v in d.items():
     print(k, v)
 
-print("-----------------")
+print("+++++++++++++++++")
+
+for i, j in enumerate(d):
+    print(i, j)
+
 
 # Unordered
 # Справедливо для работы с большими словарями
