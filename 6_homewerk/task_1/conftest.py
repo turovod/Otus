@@ -19,7 +19,7 @@ class ApiClient:
         return requests.get(url, params=params, headers=headers)
 
 
-def pytest_addoptions(parser):
+def pytest_addoption(parser):
     parser.addoption(
         "--path",
         action="store",
@@ -28,6 +28,6 @@ def pytest_addoptions(parser):
     )
 
 
-@pytest.fixture(scope='session', params='https://dog.ceo/api/breeds')
+@pytest.fixture(scope='session', params=['https://dog.ceo/api/breeds'])
 def api_client(request):
-    return request.param
+    return request.param, request.config.getoption("--path")
