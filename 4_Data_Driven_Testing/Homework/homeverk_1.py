@@ -36,13 +36,3 @@ gen = (i + ' ' + j + ' ' + k + ' ' + f for i in ls_pipol_citis for j in s for k 
 with open('result.txt', 'w', encoding='utf-8') as f:
     for i in range(100):
         f.write(next(gen) + '\n')
-
-#
-# for i in range(100):
-#     print(next(gen))
-
-
-
-#
-# for line in data:
-#     print(line)
