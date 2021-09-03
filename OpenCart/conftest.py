@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+import logging
 
 
 def get_driver_path():
