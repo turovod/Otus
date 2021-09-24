@@ -2,6 +2,7 @@ import datetime
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from OpenCart.Drivers import get_driver_path
 
 
 @pytest.fixture
@@ -10,7 +11,8 @@ def chrome_browser(request):
     opt = webdriver.ChromeOptions()
     opt.add_experimental_option('w3c', False)
     d['loggingPrefs'] = {'performance': 'ALL'}
-    wd = webdriver.Chrome(desired_capabilities=d, chrome_options=opt)
+    driver_path = get_driver_path()
+    wd = webdriver.Chrome(executable_path=driver_path, desired_capabilities=d, chrome_options=opt)
     request.addfinalizer(wd.quit)
     return wd
 
