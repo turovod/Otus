@@ -1,0 +1,8 @@
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:test_login.py:10 TEST START
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by css selector, value [title="My Account"]
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by link text, value Login
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by id, value input-email
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by id, value input-email
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by id, value input-password
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:conftest.py:30 Find element by xpath, value //*[@id="content"]//input[@value="Login"]
+[32mINFO    [0m /Users/s.loginov/Desktop/Otus/OpenCart/conftest.py:test_login.py:15 TEST PASSED

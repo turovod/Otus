@@ -1,6 +1,7 @@
 import time
 from OpenCart.locators import Login
 from OpenCart.pages import CommonPage, LoginLogout
+import allure
 
 
 def test_login(setup_teardown):
